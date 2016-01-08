@@ -22,7 +22,7 @@ class   DigitalInput
 {
     public:
                 DigitalInput();
-                DigitalInput(int pin, PinMode mode, bool active_low=false);
+                DigitalInput(int pin, PinMode mode=INPUT, bool active_low=false);
 
         void    Scan();
         

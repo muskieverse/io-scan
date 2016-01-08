@@ -14,14 +14,14 @@ AnalogInput			moisture_sensor(MOISTURE_SENSOR_PIN);
 int					scan_timer_ms				= 0;
 bool					buzzer_silenced			= false;
 
-void setup 
+void setup() 
 {
    buzzer.Off();
    scan_timer_ms  = millis();
 }
 
 
-void loop 
+void loop() 
 {
 	// Scan the silence button every 10mS in order to debounce.
 
