@@ -12,6 +12,9 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+Modified  2/18/2016  V0.0.2  JFM  - Changed analog input pin mode from
+	INPUT to AN_INPUT.
 ********************************************************************/
 
 #include "io-scan.h"
@@ -213,7 +216,7 @@ AnalogInput::AnalogInput(int pin, double range_lo, double range_hi)
 
 void    AnalogInput::Initialize()
 {
-    pinMode(pin_, INPUT);
+    pinMode(pin_, AN_INPUT);			// Modified V0.0.2
 }
 
 void    AnalogInput::Pin(int pin)
